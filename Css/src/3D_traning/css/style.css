@@ -91,7 +91,7 @@ body{
     left: 12%;
     bottom: 5%;
     width: 10vw;
-    height: 15.58vw;
+    height: 10vw;
     transform-style: preserve-3d;
 }
 .character-con{
@@ -99,6 +99,45 @@ body{
     transform-style: preserve-3d;
     transition: 1s;
 }
+.character-left{
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    background: skyblue;
+    transform: rotateY(90deg) translateZ(-5vw) ;
+}
+.character-right{
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    background: pink;
+    transform:rotateY(90deg) translateZ(5vw) ;
+}
 .character-front{
-    
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    background: blue;
+    transform: translateZ(-5vw) ;
+}
+.character-back{
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    background:blueviolet;
+    transform: translateZ(5vw) ;
+}
+.character-top{
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    background:yellow;
+    transform: rotateX(90deg) translateZ(-5vw) ;
+}
+.character-bottom{
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    background:green;
+    transform: rotateX(90deg)  translateZ(5vw) ;
 }
