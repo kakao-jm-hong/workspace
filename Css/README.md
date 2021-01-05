@@ -1,2 +1,2 @@
 # CSS
-- ### [3D ¹İÀÀÇü ¿¬½À](./documnet/3D_traning.md);
+- ### [3D ë°˜ì‘í˜• ì—°ìŠµ](./documnet/3D_traning.md);
