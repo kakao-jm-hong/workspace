@@ -16,6 +16,7 @@
 - [시작하기](./document/ch01.md)
 - [Numbers](./document/ch02.md)
 - [Letters](./document/ch03.md)
+- [변수](./document/ch04.md)
 
 
 출처 : https://pine.fm/LearnToProgram
