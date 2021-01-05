@@ -12,13 +12,16 @@
 
 출처 : 위키백과, 우리 모두의 백과사전.
 ```
-## 목차
+## 기본 문법
 - [시작하기](./document/ch01.md)
 - [Numbers](./document/ch02.md)
 - [Letters](./document/ch03.md)
 - [변수](./document/ch04.md)
-- [메서드 사용법](./document/ch05.md)
+- [내장 메소드](./document/ch05.md)
 - [Flow Control](./document/ch06.md)
+- [배열](./document/ch07.md)
+- [메소드 사용법](document/ch08.md)
+- [클래스](document/ch09.md)
 
 
 출처 : https://pine.fm/LearnToProgram
