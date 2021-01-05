@@ -1,3 +1,35 @@
+/* animation */
+@keyframes ani-running-left{
+    to{
+        transform: scale(1.2) rotateY(90deg) translateZ(-5vw);  
+    }
+}
+@keyframes ani-running-right{
+    to{
+        transform: scale(1.2) rotateY(90deg) translateZ(5vw);  
+    }
+}
+@keyframes ani-running-front{
+    to{
+        transform: scale(1.2) translateZ(-5vw);  
+    }
+}
+@keyframes ani-running-back{
+    to{
+        transform: scale(1.2) translateZ(5vw);  
+    }
+}
+@keyframes ani-running-top{
+    to{
+        transform: scale(1.2) rotateX(90deg) translateZ(-5vw);  
+    }
+}
+@keyframes ani-running-bottom{
+    to{
+        transform: scale(1.2) rotateX(90deg) translateZ(5vw);  
+    }
+}
+
 body{
     height: 500vw;
     font-family: 'Apple SD Gothic Neo', 'Roboto', 'Noto Sans KR', NanumGothic, 'Malgun Gothic', sans-serif;
@@ -106,12 +138,19 @@ body{
     background: skyblue;
     transform: rotateY(90deg) translateZ(-5vw) ;
 }
+.character.running .character-left {
+    animation: ani-running-left 1s infinite alternate cubic-bezier(0.64, 0.49, 0.73, 1.13);
+}
+
 .character-right{
     position: absolute;
     width: 10vw;
     height: 10vw;
     background: pink;
     transform:rotateY(90deg) translateZ(5vw) ;
+}
+.character.running .character-right{
+    animation: ani-running-right 1s infinite alternate cubic-bezier(0.64, 0.49, 0.73, 1.13);
 }
 .character-front{
     position: absolute;
@@ -120,12 +159,18 @@ body{
     background: blue;
     transform: translateZ(-5vw) ;
 }
+.character.running .character-front{
+    animation: ani-running-front 1s infinite alternate cubic-bezier(0.64, 0.49, 0.73, 1.13);
+}
 .character-back{
     position: absolute;
     width: 10vw;
     height: 10vw;
     background:blueviolet;
     transform: translateZ(5vw) ;
+}
+.character.running .character-back{
+    animation: ani-running-back 1s infinite alternate cubic-bezier(0.64, 0.49, 0.73, 1.13);
 }
 .character-top{
     position: absolute;
@@ -134,6 +179,9 @@ body{
     background:yellow;
     transform: rotateX(90deg) translateZ(-5vw) ;
 }
+.character.running .character-top{
+    animation: ani-running-top 1s infinite alternate cubic-bezier(0.64, 0.49, 0.73, 1.13);
+}
 .character-bottom{
     position: absolute;
     width: 10vw;
@@ -141,3 +189,10 @@ body{
     background:green;
     transform: rotateX(90deg)  translateZ(5vw) ;
 }
+.character.running .character-bottom{
+    animation: ani-running-bottom 1s infinite alternate cubic-bezier(0.64, 0.49, 0.73, 1.13);
+}
+.character[data-direction='forward'] { transform: rotateY(180deg); transition: all 1s;}
+.character[data-direction='backward'] { transform: rotateY(0deg); transition: all 1s;}
+.character[data-direction='left'] { transform: rotateY(-90deg); transition: all 1s;}
+.character[data-direction='right'] { transform: rotateY(90deg); transition: all 1s;}
