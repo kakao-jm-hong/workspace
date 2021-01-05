@@ -7,9 +7,9 @@ WORK SPACE 저장소는 체계적으로 언어, 플랫폼, 새로운기술들을 공부하고 정리하는 저
 <br>
 
 # 언어
-- ### [Ruby](Ruby/README.md)
+- ### [Ruby](./Ruby/README.md)
 - ### JavaScript
-- ### CSS
+- ### [CSS](./Css/README.md)
 <br>
 
 # 프레임워크
@@ -26,4 +26,4 @@ WORK SPACE 저장소는 체계적으로 언어, 플랫폼, 새로운기술들을 공부하고 정리하는 저
 <br>
 
 # 그외
-- ### [인터렉티브 디자인]()
+- ### [인터렉티브 디자인](./Interactive/README.md)
