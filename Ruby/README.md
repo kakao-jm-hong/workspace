@@ -17,6 +17,8 @@
 - [Numbers](./document/ch02.md)
 - [Letters](./document/ch03.md)
 - [변수](./document/ch04.md)
+- [메서드 사용법](./document/ch05.md)
+- [Flow Control](./document/ch06.md)
 
 
 출처 : https://pine.fm/LearnToProgram
