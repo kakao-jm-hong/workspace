@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,21 +14,29 @@
 			min-height: 100vh;
 			/* border: 10px solid red; */
 		}
+
 		.flex-item {
 			flex: 1 auto;
+			display: flex;
+			align-items: center;
+			justify-content: center;
 		}
+
 		@media (min-width: 600px) {
 			.flex-container {
 				flex-direction: row;
 				flex-wrap: wrap;
 			}
+			
 			.flex-item {
+				flex-grow: 0;
 				width: 50%;
 				/* flex-grow: 0; */
 				/* flex: 0 auto; */
 				/* flex-basis: 50%; */
 			}
 		}
+
 		@media (min-width: 900px) {
 			.flex-item {
 				width: 30%;
@@ -35,6 +44,7 @@
 		}
 	</style>
 </head>
+
 <body>
 	<div class="flex-container">
 		<div class="flex-item">AAAAAAAAAA</div>
@@ -48,4 +58,5 @@
 		<div class="flex-item">CCCCCC</div>
 	</div>
 </body>
+
 </html>
