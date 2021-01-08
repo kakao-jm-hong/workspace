@@ -1,0 +1,145 @@
+.search-form{
+    display: flex;
+    height: 38px;
+    flex:1;
+}
+.search-form input[type="search"]{
+    flex: 1;
+    border: 0;
+    border-radius: 3em;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+.search-form input[type="submit"]{
+    border-radius: 1em;
+    width: 4em;
+    font-size: 1rem;
+    margin-right: 10px;
+    transition: 0.6s;
+    background: crimson;
+}
+.search-form input[type="submit"]:hover{
+    background: gold;
+}
+
+.menu{
+    display: flex;
+}
+.menu-item{
+    width: 25%;
+    background: crimson;
+    transition: 0.6s;
+}
+.menu-item:hover{
+    width:35%;
+    background: gold;
+}
+.menu-link{
+    display: block;
+    padding: 1em;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #555;
+    text-decoration: none;
+    text-align: center;
+}
+
+.card-item{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+.card-image:hover{
+    transform: scale(1.1);
+}
+.card-image{
+    background-color: lightgray;
+    height: 0;
+    padding-bottom: 60%;
+    margin-bottom: 2rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: 0.6s;
+}
+.card-image img{
+    display: none;
+}
+
+.user-list{
+    margin-bottom: 2rem;
+}
+.user-item{
+    display: flex;
+    margin-bottom: 1.5em;
+}
+.user-photo{
+	flex-shrink: 0;
+	width: 50px;
+	height: 50px;
+	margin-right: 0.5em;
+	border: 2px solid #333;
+	border-radius: 50%;
+	background-color: gold;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 150%;
+}
+.friend-item{
+    align-items: center;
+}
+.user-name{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+.dialog{
+    width: 50vw;
+    padding: 2em;
+    border-radius: 1em;
+    background: wheat;
+}
+
+@media(min-width : 600px){
+    .card-list-con{
+        overflow-x: hidden;
+    }
+    .card-list{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -1rem;
+    }
+    .card-item{
+        width: 50%;
+        padding: 0 1rem;
+    }
+}
+@media(min-width : 1200px){
+    .card-item{
+        width: 33.33333333%;
+        padding: 0 1rem;
+    }
+}
+
+.info-list{
+    margin-bottom: 2rem;
+}
+.info-list-item{
+    display: flex;
+    margin: 0.5em 0;
+}
+.info-list-item::before{
+    content: "⌘";
+    margin-right: 0.5em;
+}
