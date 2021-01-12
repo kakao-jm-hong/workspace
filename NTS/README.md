@@ -1,2 +1,2 @@
 # NTS
-- NTS 폴더
+- [Git 정리](./document/git.md) 
