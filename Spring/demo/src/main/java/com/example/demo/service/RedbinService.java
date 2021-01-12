@@ -1,10 +1,11 @@
 package com.example.demo.service;
 
-import java.util.concurrent.Future;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.scheduling.annotation.Async;
-import org.springframework.scheduling.annotation.AsyncResult;
+import org.springframework.stereotype.Service;
 
+@Service
 public class RedbinService {
 //	public void method1(final String message) {
 //		new Thread(new Runnable() {
@@ -34,10 +35,20 @@ public class RedbinService {
 //		// do something
 //	}
 
-	@Async("threadPoolTaskExecutor")
-	public Future<String> method1(String message) throws Exception {
-		// do something
-		return new AsyncResult<String>("Success");
+//	@Async("threadPoolTaskExecutor")
+//	public Future<Integer> method1(int message) throws Exception {
+//		// do something
+//		Logger logger = LoggerFactory.getLogger(RedbinService.class);
+//		Thread.sleep(1000L);
+//			logger.info(message+"");
+//		return new AsyncResult<Integer>(message);
+//	}
+	private static final Logger logger = LoggerFactory.getLogger(RedbinService.class);
 	
+	@Async
+	public void method1(int i) throws Exception {
+		// do something
+		Thread.sleep(1000L);
+		logger.info("i = " + i);
 	}
 }
