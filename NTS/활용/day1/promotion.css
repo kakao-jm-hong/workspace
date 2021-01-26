@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+ol{
+    list-style: none;
+}
+
+body,ol{
+    margin: 0;
+    padding: 0;
+}
+
+.wrap{
+    position: relative;
+    width: 1000px;
+    height: 700px;
+    margin: 0 auto;
+    background:url(img/promotion.png) no-repeat 0 0;
+}
+
+.blind{
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+.link_point{
+    position: absolute;
+    left: 192px;
+    top: 566px;
+    display: block;
+    width: 119px;
+    height: 23px;
+}
+
+.link_join{
+    position: absolute;
+    display: block;
+    left: 422px;
+    top: 618px;
+    width: 341px;
+    height: 74px;
+}

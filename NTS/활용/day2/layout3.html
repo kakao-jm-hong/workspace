@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        html,
+        body,
+        .wrap {
+            height: 100%;
+        }
+
+        .header {
+            height: 100px;
+            background-color: lightgreen;
+        }
+
+        .container {
+            position: relative;
+            width: 800px;
+            min-height: 100%;
+            margin: 0 auto;
+            margin: -100px auto;
+            padding: 100px 0;
+            box-sizing: border-box;
+        }
+
+        .container::after {
+            display: block;
+            clear: both;
+            content: '';
+        }
+
+        .content {
+            float: left;
+            width: 500px;
+            height: 300px;
+            background-color: lightsalmon;
+        }
+
+        .aside::after {
+            position: absolute;
+            top:100px;
+            right:300px;
+            bottom: 100px;
+            content: '';
+            width: 5px;
+            background-color: #000;
+
+        }
+
+        .aside {
+            float: left;
+            width: 300px;
+            height: 300px;
+            background-color: lightseagreen;
+        }
+
+        .footer {
+            height: 100px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">header</div>
+        <div class="container">
+            <div class="content">content</div>
+            <div class="aside">aside</div>
+        </div>
+        <div class="footer">footer</div>
+
+    </div>
+</body>
+
+</html>

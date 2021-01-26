@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        .header {
+            height: 100px;
+            background-color: lightgreen;
+        }
+
+        html,
+        body,
+        .wrap {
+            height: 100%;
+        }
+
+        .container {
+            display: table;
+            table-layout: fixed;
+            margin: 0 auto;
+            min-height: 100%;
+            width: 800px;
+            margin: -100px auto;
+            padding: 100px 0;
+            box-sizing: border-box;
+        }
+
+        .content {
+            display: table-cell;
+            width: 500px;
+            background-color: lightsalmon;
+            border-right: solid 5px #000;
+        }
+
+        .aside {
+            display: table-cell;
+            width: 300px;
+            background-color: lightseagreen;
+        }
+
+        .footer {
+            height: 100px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">header</div>
+        <div class="container">
+            <div class="content">content</div>
+            <div class="aside">aside</div>
+        </div>
+        <div class="footer">footer</div>
+
+    </div>
+</body>
+
+</html>
