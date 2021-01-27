@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+h1,h2,h3,body,p{
+    margin: 0;
+    padding: 0;
+}
+
+html,body,.wrap,.main,.container,.aside{
+    height: 100%;
+}
+
+h2,h3{
+    font-size: 18px;
+    font-weight: normal;
+}
+.aside_bottom_title, .footer_title{
+    font-size: 18px;
+}
+.content_area_par,.aside_area_title,.aside_area_par,.aside_top_title,.content_top_title,.aside_bottom{
+    text-align: center;
+}
+.content_area_par,.aside_area_par{
+    line-height: 18px;
+}
+
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    margin: -1px;
+    clip: rect(0, 0, 0, 0);
+}
+/* padding과 margin으로 상하단 고정을 하다보니 (main+container)deepth가 하나추가되었습니다. */
+.main{
+    padding-bottom: 55px;
+    margin-top: -55px;
+}
+.container{
+    display: table;
+    min-height: 100%;
+    width: 100%;
+    padding-top: 110px;
+}
+
+.header{
+    position: fixed;
+    text-align: center;
+    height: 55px;
+    font-size: 18px;
+    line-height: 50px;
+    top: 0;left: 0;right: 0;
+    background-color: #3cb371;
+}
+
+.aside{
+    position: relative;
+    background-color:rgb(222, 235, 228);
+    display:table-cell;
+    table-layout: fixed;
+    width: 249px;
+    border-right: 1px solid #ccc;
+}
+.content{
+    position: relative;
+    display: table-cell;
+}
+
+.aside_top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 52px;
+    border-bottom: 1px solid #ccc;
+}
+.aside_area{
+    position: absolute;
+    top: 53px;
+    left:0;
+    right: 0;
+    bottom: 47px;
+
+    overflow:scroll;
+   
+}
+
+.aside_bottom{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 46px;
+    border-top: 1px solid #ccc;
+}
+
+.content_top{
+    background-color: #f7f7f7;
+    height: 99px;;
+    border-bottom: 1px solid #ccc;
+}
+.content_area{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    bottom:0;
+    overflow: scroll;
+}
+
+.footer{
+    position: fixed;
+    border-top: 1px solid #ccc;
+    height: 54px;
+    bottom: 0;left: 0;right: 0;
+    background-color: #f7f7f7;
+    text-align: center;
+}
