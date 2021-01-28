@@ -186,3 +186,106 @@ position: absolute;
 z-index: -1;
 color: transparent;
 ```
+
+# 아이콘 상태변경
+```
+<div class="change"><span class="blind">첫째</span></div>
+<div class="change up"><span class="blind">둘째</span></div>
+<div class="change down"><span class="blind">셋째</span></div>
+```
+```
+.change {
+  float: left;
+  padding: 10px;
+  text-align: center;
+}
+.change:after {
+  display: block;
+  width: 100px;
+  height: 100px;
+  content: '';
+  border: 1px solid gray;
+  background-color: pink;
+}
+.up:after {
+  background: url(https://image.flaticon.com/icons/png/512/187/187142.png) no-repeat;
+  background-size: cover;
+}
+.down:after {
+  background: url(https://image.flaticon.com/icons/png/512/187/187154.png) no-repeat;
+  background-size: cover;
+}
+/* IR(*Image Replacement) 처리 */
+.blind {
+  overflow: hidden;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+```
+
+# 마우스 오버시 상태변경
+```
+<div class="box test1">
+  <a href="#" class="img_link">
+    <img src="https://image.flaticon.com/icons/png/512/124/124027.png" width="100" height="100" alt="">
+    <span class="alert">99</span>
+  </a>
+  <a href="#" class="del_link">x</a>
+</div>
+
+<div class="box test2">
+  <a href="#" class="img_link">
+    <img src="https://image.flaticon.com/icons/png/512/124/124027.png" width="100" height="100" alt="">
+    <span class="alert">99</span>
+  </a>
+  <a href="#" class="del_link">x</a>
+</div>
+```
+```
+.box {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+.box + .box {
+  margin-top: 30px;
+}
+.img_link {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+}
+.alert {
+  position: absolute;
+  right: 4px;
+  bottom: 4px;
+  padding: 0 10px;
+  font-size: 12px;
+  line-height: 18px;  
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.del_link {
+  display: none;
+  position: absolute;
+  top:0;
+  right: 0;
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.test1 .img_link:hover + .del_link {
+	display: block;
+}
+.test2:hover > .del_link {
+	display: block;
+}
+```
+
+# TABLE
