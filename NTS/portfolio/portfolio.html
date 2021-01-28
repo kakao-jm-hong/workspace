@@ -22,14 +22,12 @@
                 <h3 class="element-title">테이블 요소</h3>
                 <div class="element-content">
                     <div class="table-elemnet-1">
-                        <div class="table-element-title">
-                            아동 사이즈
-                        </div>
                         <table class="table-kids-size">
-                            <caption><span class="blind">아동 사이즈</span></caption>
+                            <caption class="table-element-title"><span>아동 사이즈</span></caption>
                             <colgroup>
-                                <col width="170px" />
-                                <col width="90px" span="7" />
+                                <col style="width:170px">
+                                <col style="width:90px" span="7">
+                                <col>
                             </colgroup>
                             <thead>
                                 <tr>
@@ -111,13 +109,10 @@
                         </table>
                     </div>
                     <div class="table-element-2">
-                        <div class="table-element-title">
-                            환불 가능 금액 조회
-                        </div>
                         <table class="table-refund">
-                            <caption><span class="blind">환불 가능 금액 조회</span></caption>
+                            <caption class="table-element-title"><span>환불 가능 금액 조회</span></caption>
                             <colgroup>
-                                <col width="25%" span="4" />
+                                <col style="width:25%" span="4" />
                             </colgroup>
                             <thead class="table-refund-thead">
                                 <tr>
@@ -259,66 +254,62 @@
                         '프로젝트'사전 검색 결과
                     </h4>
                     <div class="list-form-project">
-                        <div class="list-form-project-title">
+                        <h5 class="list-form-project-title">
                             프로젝트
-                        </div>
-                        <ul>
-                            <li class="list-form-li">
-                                <div>
-                                    <span class="list-form-project-par-title-1"> 프로젝트</span>
-                                    <span class="list-form-project-par-title-2"> 영양사전</span>
-                                </div>
-                                <p class="list-form-project-par">
-                                    연구나 새로운 사업의 개발을 위한 유기적이고 조직적인 계획, 원자력 개발이나 우주개발 등은 대형 프로젝트를 조직하여 이루어진다. 일반적으로는
-                                    특정한 목표, 계획을 위한
-                                    학습활동,
-                                    실행계획 등을 가리킨다.
-                                </p>
-                            </li>
-                            <li class="list-form-li">
-                                <div>
-                                    <span class="list-form-project-par-title-1"> 프로젝트</span>
-                                    <span class="list-form-project-par-title-2"> Basic 중학생을 위한 기술, 가정 용어사전</span>
-                                </div>
-                                <p class="list-form-project-par">
-                                    어떤 특정한 목적 달성을 위하여 실시되는 시스템 개발, 프로그램 설계, 연구 개발 계획 혹은 건설 공사 등과 같이 한 번에 그치는 성격을 갖는
-                                    단위 작업이나 사업.
-                                </p>
-                            </li>
-                        </ul>
+                        </h5>
+                        <dl>
+                            <dt>
+                                <span class="list-form-project-par-title-1"> 프로젝트</span>
+                                <span class="list-form-project-par-title-2"> 영양사전</span>
+                            </dt>
+                            <dd class="list-form-project-par">
+                                연구나 새로운 사업의 개발을 위한 유기적이고 조직적인 계획, 원자력 개발이나 우주개발 등은 대형 프로젝트를 조직하여 이루어진다. 일반적으로는
+                                특정한 목표, 계획을 위한
+                                학습활동,
+                                실행계획 등을 가리킨다.
+                            </dd>
+                            <dt>
+                                <span class="list-form-project-par-title-1"> 프로젝트</span>
+                                <span class="list-form-project-par-title-2"> Basic 중학생을 위한 기술, 가정 용어사전</span>
+                            </dt>
+                            <dd class="list-form-project-par">
+                                어떤 특정한 목적 달성을 위하여 실시되는 시스템 개발, 프로그램 설계, 연구 개발 계획 혹은 건설 공사 등과 같이 한 번에 그치는 성격을 갖는
+                                단위 작업이나 사업.
+                            </dd>
+                        </dl>
                     </div>
                     <h4 class="table-element-title">
                         실시간 검색어
                     </h4>
                     <div class="list-form-projcet-real-time-search">
-                        <ul>
-                            <li class="li-interval"><strong class="list-search-rank">1</strong> <a
-                                    class="list-search-content" href="#">입추</a></li>
-                            <li class="li-interval"><strong class="list-search-rank">2</strong> <a
-                                    class="list-search-content" href="#">런닝맨 유재석</a>
+                        <ol>
+                            <li class="li-interval"><a class="list-search-content" href="#"><strong
+                                        class="list-search-rank">1</strong> 입추</a></li>
+                            <li class="li-interval"><a class="list-search-content" href="#"><strong
+                                        class="list-search-rank">2</strong> 런닝맨 유재석</a>
                             </li>
-                            <li class="li-interval"><strong class="list-search-rank">3</strong> <a
-                                    class="list-search-content" href="#">런닝맨</a></li>
-                            <li class="li-interval"><strong class="list-search-rank">4</strong> <a
-                                    class="list-search-content" href="#">소나기</a></li>
-                            <li class="li-interval"><strong class="list-search-rank">5</strong> <a
-                                    class="list-search-content" href="#">주간 날씨</a>
+                            <li class="li-interval"><a class="list-search-content" href="#"><strong
+                                        class="list-search-rank">3</strong> 런닝맨</a></li>
+                            <li class="li-interval"><a class="list-search-content" href="#"><strong
+                                        class="list-search-rank">4</strong> 소나기</a></li>
+                            <li class="li-interval"><a class="list-search-content" href="#"><strong
+                                        class="list-search-rank">5</strong> 주간 날씨</a>
                             </li>
-                            <li class="li-interval"><strong class="list-search-rank">6</strong> <a
-                                    class="list-search-content" href="#">깔라만시</a>
+                            <li class="li-interval"><a class="list-search-content" href="#"><strong
+                                        class="list-search-rank">6</strong>깔라만시</a>
                             </li>
-                            <li class="li-interval"><strong class="list-search-rank">7</strong> <a
-                                    class="list-search-content" href="#">내 아이디는
+                            <li class="li-interval"><a class="list-search-content" href="#"><strong
+                                        class="list-search-rank">7</strong> 내 아이디는
                                     강남미인</a></li>
-                            <li class="li-interval"><strong class="list-search-rank">8</strong> <a
-                                    class="list-search-content" href="#">차은우</a></li>
-                            <li class="li-interval"><strong class="list-search-rank">9</strong> <a
-                                    class="list-search-content" href="#">한국사능력검정시험</a>
+                            <li class="li-interval"><a class="list-search-content" href="#"><strong
+                                        class="list-search-rank">8</strong> 차은우</a></li>
+                            <li class="li-interval"><a class="list-search-content" href="#"><strong
+                                        class="list-search-rank">9</strong> 한국사능력검정시험</a>
                             </li>
-                            <li class="li-interval"><strong class="list-search-rank">10</strong> <a
-                                    class="list-search-content" href="#">맛있는 녀석들</a>
+                            <li class="li-interval"><a class="list-search-content" href="#"><strong
+                                        class="list-search-rank">10</strong> 맛있는 녀석들</a>
                             </li>
-                        </ul>
+                        </ol>
                     </div>
                     <h4 class="table-element-title">
                         쿠키 이용 안내
@@ -347,7 +338,7 @@
                     <ul class="list-form-project-news">
                         <li class="list-news">
                             <a class="list-news-image" href="#">
-                                <img src="./image/thumbnail1.jpg" width="80px" height="80px"
+                                <img src="./image/thumbnail1.jpg" width="80" height="80"
                                     alt="[날씨] 내일도 35도 안팎 폭염·내륙 소나기···습도 높아 후텁지근">
                             </a>
                             <a class="list-news-anchor-title" href="#">
@@ -364,7 +355,6 @@
                             </p>
                         </li>
                         <li class="list-news">
-
                             <a class="list-news-anchor-title" href="#">
                                 [팻카드] 강아지 중성화가 필요한 이유
                             </a>
@@ -379,7 +369,8 @@
                         </li>
                         <li class="list-news">
                             <a class="list-news-image" href="#">
-                                <img src="./image/thumbnail1.jpg" alt="">
+                                <img src="./image/thumbnail1.jpg" width="80" height="80"
+                                    alt="다이어트에 좋은 여름 복숭아, 먹으면 안되는 사람 있어">
                             </a>
                             <a class="list-news-anchor-title" href="#">
                                 다이어트에 좋은 여름 복숭아, 먹으면 안되는 사람 있어
@@ -401,36 +392,48 @@
                         웹툰
                     </h4>
                     <ul class="list-webtoon-ul">
-                        <a class="list-webtoon-li" href="#">
-                            <img class="webtoon-image" width="285px" height="140px" src="./image/thumbnail2.jpg">
-                            <p class="webtoon-title">하루 3컷</p>
-                            <p class="webtoon-content">17화 편리하게 피곤하게</p>
-                        </a>
-                        <a class="list-webtoon-li" href="#">
-                            <img class="webtoon-image" width="285px" height="140px" src="./image/thumbnail2.jpg">
-                            <p class="webtoon-title"><span class="cuttoon">컷툰</span> 유미의 세포들</p>
-                            <p class="webtoon-content">326화 미래에서 온 텔레파시</p>
-                        </a>
-                        <a class="list-webtoon-li" href="#">
-                            <img class="webtoon-image" width="285px" height="140px" src="./image/thumbnail2.jpg">
-                            <p class="webtoon-title">이말년씨리즈 2018</p>
-                            <p class="webtoon-content">58화 공포의 떡볶이</p>
-                        </a>
-                        <a class="list-webtoon-li" href="#">
-                            <img class="webtoon-image" width="285px" height="140px" src="./image/thumbnail2.jpg">
-                            <p class="webtoon-title"><span class="smartphone">스마트폰</span> 덴마</p>
-                            <p class="webtoon-content">195 1.다이크(196)</p>
-                        </a>
-                        <a class="list-webtoon-li" href="#">
-                            <img class="webtoon-image" width="285px" height="140px" src="./image/thumbnail2.jpg">
-                            <p class="webtoon-title"><span class="cuttoon">컷툰</span> 1인용 기분</p>
-                            <p class="webtoon-content">20화 평가</p>
-                        </a>
-                        <a class="list-webtoon-li" href="#">
-                            <img class="webtoon-image" width="285px" height="140px" src="./image/thumbnail2.jpg">
-                            <p class="webtoon-title">찬란하지 않아도 괜찮아</p>
-                            <p class="webtoon-content">56화 숨길 수 없어요</p>
-                        </a>
+                        <li class="list-webtoon-li">
+                            <a href="#">
+                                <img class="webtoon-image" width="285" height="140" src="./image/thumbnail2.jpg" alt="">
+                                <div class="webtoon-title">하루 3컷</div>
+                                <p class="webtoon-content">17화 편리하게 피곤하게</p>
+                            </a>
+                        </li>
+                        <li class="list-webtoon-li">
+                            <a href="#">
+                                <img class="webtoon-image" width="285" height="140" src="./image/thumbnail2.jpg" alt="">
+                                <div class="webtoon-title"><span class="cuttoon">컷툰</span> 유미의 세포들</div>
+                                <p class="webtoon-content">326화 미래에서 온 텔레파시</p>
+                            </a>
+                        </li>
+                        <li class="list-webtoon-li">
+                            <a href="#">
+                                <img class="webtoon-image" width="285" height="140" src="./image/thumbnail2.jpg" alt="">
+                                <div class="webtoon-title">이말년씨리즈 2018</div>
+                                <p class="webtoon-content">58화 공포의 떡볶이</p>
+                            </a>
+                        </li>
+                        <li class="list-webtoon-li">
+                            <a href="#">
+                                <img class="webtoon-image" width="285" height="140" src="./image/thumbnail2.jpg" alt="">
+                                <div class="webtoon-title"><span class="smartphone">스마트폰</span> 덴마</div>
+                                <p class="webtoon-content">195 1.다이크(196)</p>
+                            </a>
+                        </li>
+                        <li class="list-webtoon-li">
+                            <a href="#">
+                                <img class="webtoon-image" width="285" height="140" src="./image/thumbnail2.jpg" alt="">
+                                <div class="webtoon-title"><span class="cuttoon">컷툰</span> 1인용 기분</div>
+                                <p class="webtoon-content">20화 평가</p>
+                            </a>
+                        </li>
+                        <li class="list-webtoon-li">
+                            <a href="#">
+                                <img class="webtoon-image" width="285" height="140" src="./image/thumbnail2.jpg" alt="">
+                                <div class="webtoon-title">찬란하지 않아도 괜찮아</div>
+                                <p class="webtoon-content">56화 숨길 수 없어요</p>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </section>
