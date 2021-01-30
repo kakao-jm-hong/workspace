@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <title>수직 정렬 테스트</title>
+    <style>
+        html,body{
+            margin:0;
+            height:100%;
+        }
+        .wrap{
+            height:100%;
+        }
+        .box1{
+            display:inline-block;
+            width:300px;
+            height:300px;
+            vertical-align: middle;
+            background-color:pink;
+        }
+        .wrap::after{
+            width: 2px;
+            background-color:black;
+            height:100%;
+            display:inline-block;
+            content:'';
+            vertical-align:middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box1">
+            <a href="https://css-tricks.com/almanac/properties/v/vertical-align/" target="_blank">링크</a>
+        </div>
+    </div>
+</body>
+</html>

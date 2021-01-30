@@ -289,3 +289,51 @@ color: transparent;
 ```
 
 # TABLE
+- td,th 안에 div로 감싸는것이 크로스브라우징을 방지할 수 있음.
+
+- <colgroup>, <col>
+
+  - 셀 크기를 조절하여 해당하는 열의 너비를 변경하기도 하지만, colgroup과 col을 이용하기도 합니다. col은 colmns 즉, 테이블의 열을 가리킵니다.
+
+  - CSS 속성 중 wiidth, background, border를 입력하면 해당하는 열에 모두 적용이 됩니다. 하지만 렌더링 시 레이어 뎁스가 낮은 편이기 때문에, 주로 width를 제어하기 위해 사용합니다.
+
+- 오른쪽 하단부터 왼쪽위로 렌더링이 됩니다.
+- 요약 정리 
+
+# 테이블 접근성
+## th scope = "col, row, colgroup, rowgroup"
+- id="", headers="" 
+- 셀의 크기
+- table-layout: fixed; 
+- 셀 안에서의 콘텐츠 정렬
+- text-align, vertical-align
+- 테이블의 테두리
+- 기본 모양은 테두리가 없음
+- 테두리 사이의 간격 제거
+- <colgroup>, <col>
+- width 주로 사용
+- 테이블과 position
+- 셀 안에 div 추가
+
+# 팝업
+
+- 특정 영역의 위치에,
+- 특정 사이즈의 레이어를
+- 특정 시점에 노출
+
+일반 팝업
+- 새창 열기
+- 새로운 html,css
+- a 태그, 팝업 고유 주소 있음
+- 윈도우 기준
+- 브라우저 옵션으로 노출을 막을 수 잇음
+
+레이어 팝업
+- 마크업 요소 보여주기
+- 동일한 html,css
+- button 태그 현재 페이지의 일부
+- 뷰포트 기준
+- 스크립트 로딩만 가능하다면 노출
+
+# 중앙 정렬
+-
