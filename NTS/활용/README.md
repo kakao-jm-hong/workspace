@@ -336,4 +336,81 @@ color: transparent;
 - 스크립트 로딩만 가능하다면 노출
 
 # 중앙 정렬
--
+
+
+# FORM
+
+## 브라우저별로 대응해야한다. (placeholder)
+```
+input[type="text"],
+input[type="password"] {
+    width: 198px;
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #ddd;
+    font-size: 15px;
+    text-indent: 10px;
+    color: #000;
+}
+
+textarea {
+    width: 280px;
+    height: 130px;
+    padding: 9px;
+    border: 1px solid #ddd;
+    font-size: 15px;
+    resize: none;
+    color: #000;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: red;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    color: red;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    color: red;
+}
+:-moz-placeholder { /* Firefox 18- */
+    color: red;
+}
+
+textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: blue;
+}
+textarea::-moz-placeholder { /* Firefox 19+ */
+    color: blue;
+}
+textarea:-ms-input-placeholder { /* IE 10+ */
+    color: blue;
+}
+textarea:-moz-placeholder { /* Firefox 18- */
+    color: blue;
+}
+```
+
+#체크박스, 라디오 커스텀
+```
+input[type='checkbox'] + label {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    width: 36px;
+    height: 21px;
+    border-radius: 10px;
+    background: #666;
+    vertical-align: top;
+    color: transparent;
+}
+input[type='checkbox'] + label:after {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 19px;
+    height: 19px;
+    background: #fff;
+    border-radius: 50%;
+}
+```

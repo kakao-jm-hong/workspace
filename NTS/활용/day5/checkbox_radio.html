@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type='checkbox'] {
+            /* input 감추기 */
+            position: absolute;
+            overflow: hidden;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            opacity: 0;
+        }
+
+        input[type='checkbox']+label {
+            display: inline-block;
+            overflow: hidden;
+            position: relative;
+            width: 36px;
+            height: 21px;
+            border-radius: 10px;
+            background: #666;
+            vertical-align: top;
+            color: transparent;
+        }
+
+        input[type='checkbox']+label:after {
+            content: '';
+            position: absolute;
+            top: 1px;
+            left: 1px;
+            width: 19px;
+            height: 19px;
+            background: #fff;
+            border-radius: 50%;
+        }
+
+        input[type='checkbox']:checked+label {
+            background-color: #62a7ee;
+        }
+
+        input[type='checkbox']:checked+label:after {
+            left: auto;
+            right: 1px;
+        }
+
+        input[type='checkbox'] {
+            /* input 감추기 */
+            position: absolute;
+            overflow: hidden;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            opacity: 0;
+        }
+
+        input[type='checkbox']+label {
+            display: inline-block;
+            font-size: 16px;
+        }
+
+        input[type='checkbox']+label:before {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin: -4px 5px 0 0;
+            background: url(checkbox.png) no-repeat 0 0;
+            background-size: 20px;
+            vertical-align: top;
+            content: '';
+        }
+
+        input[type='checkbox']:checked+label:before {
+            background-image: url(checkbox_on.png);
+        }
+
+        input[type='radio'] {
+            /* input 감추기 */
+            position: absolute;
+            overflow: hidden;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            opacity: 0;
+        }
+
+        input[type='radio']+label {
+            display: inline-block;
+            font-size: 16px;
+        }
+
+        input[type='radio']+label:before {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin: -4px 5px 0 0;
+            background: url(radio.png) no-repeat 0 0;
+            background-size: 20px;
+            vertical-align: top;
+            content: '';
+        }
+
+        input[type='radio']:checked+label:before {
+            background-image: url(radio_on.png);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <input type="checkbox" id="check_button1" name="">
+        <label for="check_button1">선택1</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="check_button2" name="">
+        <label for="check_button2">선택2</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="check_button1" name="">
+        <label for="check_button1">선택1</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="check_button2" name="">
+        <label for="check_button2">선택2</label>
+    </div>
+
+
+    <div>
+        <input type="radio" id="radio_button1" name="radio_form">
+        <label for="radio_button1">라디오1</label>
+    </div>
+
+    <div>
+        <input type="radio" id="radio_button2" name="radio_form">
+        <label for="radio_button2">라디오2</label>
+    </div>
+
+    <div>
+        <input type="radio" id="radio_button3" name="radio_form">
+        <label for="radio_button3">라디오3</label>
+    </div>
+</body>
+
+</html>
