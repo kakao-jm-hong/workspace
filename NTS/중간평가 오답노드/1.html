@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .list .item {
+            font-size: 14px;
+            color: black;
+        }
+
+        .list .item+.item {
+            color: green;
+        }
+
+        .list .item:first-child {
+            color: blue;
+        }
+
+        .list .item:last-child {
+            font-size: 18px;
+            color: orange;
+        }
+
+        .list .item:nth-child(even) {
+            color: red;
+        }
+
+        .list .item:nth-last-of-type(2) {
+            color: pink;
+        }
+
+        .list .item:only-child {
+            font-size: 18px;
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="list">
+        <li class="item">item1</li> 
+        <li class="item">item2</li>
+        <li class="item">item3 
+        <ul>
+        <li class="item">child item1</li>
+        </ul>
+        </li>
+        <li class="item">item4
+        <ul>
+        <li class="item">child item1</li>
+        <li class="item">child item2</li> 
+        <li class="item">child item3</li> 
+        </ul>
+        </li>
+        <li class="item">item5</li> 
+        <li class="item">item6</li>
+       </ul>
+</body>
+
+</html>
