@@ -34,7 +34,44 @@
         // 첫번째 li 찾고 css 메소드쓸수잇는방법
         $("li").eq(0).css("background-color", "blue");
 
+        // 속성을 다루는 방법
+        // id값을 select로 변경
+        $("#check").atrr("id","select");
+        $("#check").prop("id","select");
+        
+        // 삭제
+        $("#check").removeAtrr("id","select");
+        $("#check").removeProp("id","select");
 
+        // 클래스를 삭제하는 방법
+        $("#foo").removeClass("checked");
+        
+        // 추가
+        $("#foo").addClass("checked");
+        
+        // 있는지 
+        $("#foo").hasClass("checked");
+        
+        // 토글
+        $("#foo").toggleClass("checked");
+
+        // Effect
+
+        // 서서히 안보이게
+        $("#foo").hide(600);
+        $("#foo").show(600);
+        $("#foo").show("slow");
+        $("#foo").show("fast");
+
+        // 서서히 안보이게 하고 이펙트끝난뒤 실행
+        $("#foo").hide(600,function(){
+
+        });
+
+        // 위로 올려서 없애는것
+        $("#foo").slideUp();
+        // 밑으로 없애기
+        $("#foo").slideDown();
     </script>
 </body>
 
