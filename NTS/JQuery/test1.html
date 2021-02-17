@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li><input type="text" placeholder="add"></li>
+    </ul>
+    <script type="text/javascript">
+
+        // event
+        $("#todolist").on("click",function(){
+            if(e.target.tagName ==="INPUT"){
+                console.log("checkbox");
+            }
+        });
+
+        $("#todolist").on("click","span",function(e){
+            console.log("checkbox");
+        });
+
+        // Attribute
+        // type속성의 정보를 가져온다. 없으면 undefined
+        // 보통 custom attr속성에 대해서 사용한다.
+        $("check").attr("type");
+
+        // 속성삭제할때
+        $("check").removeAttr("foo");
+        
+        // true or false 반환
+        $("#check").prop("checked");
+
+        // prop 삭제
+        $("#check").removeProp("checked");
+        
+        $("#foo").removeClass("checked");
+        $("#foo").addClass("checked");
+        // 추가제거알아서하는 것
+        $("#foo").toggleClass("checked");
+
+        $("ul li:fist").attr("mailbox-id");
+        
+        // ul id="data"
+        // li data-id ="1"
+        $("ul li:fist").data(("id"));
+        $("ul li:fist").data(({"id":1,"pwd":2}));
+
+        // Dom insertion
+        var html = "<li><input type=\"text\" placeholder=\"add\"></li>";
+        var ele = document.createElement("li");
+        var $ele = $("#todo");
+        // 마지막 자식에 Dom 추가
+        $("#todolist").append(html);
+        // 첫 자식에 Dom 추가
+        $("#todolist").prepend($ele);
+
+        // To
+        $(html).prependTo("#todolist");
+
+        // event object
+        $("#todo").on("keydown",function(event){
+            console.log(event.which);
+            // 이벤트를 발생시킨녀석
+            console.log(event.target);
+            // 이벤트를 바인딩한 이벤트
+            console.log(event.currentTarget);
+            // this는 event.currentTarget 을 대부분 의미한다.
+            console.log(this);
+        });
+    </script>
+</body>
+</html>

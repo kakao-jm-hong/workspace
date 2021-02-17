@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        // 부모엘리먼트
+        $("#bar12").parent("ul");
+
+        // 루트부모
+        $("#bar12").parents("ul");
+
+        // 가장 가까운 (가장 많이씀)
+        $("bar11").closest("ul");
+
+        // find 활용
+        $("depth2").css("background-color", "red");
+        $("depth3").css("background-color", "blue");
+
+        // 이게 더좋음.
+        $("depth2").css("background-color", "red").find("#depth3").css("background-color", "blue");
+
+        // 첫번째 li찾기
+        $("li")[0];
+        $("li").get(0);
+
+
+        // 첫번째 li 찾고 css 메소드쓸수잇는방법
+        $("li").eq(0).css("background-color", "blue");
+
+
+    </script>
+</body>
+
+</html>
