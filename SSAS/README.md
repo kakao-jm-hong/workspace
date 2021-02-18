@@ -85,7 +85,6 @@ $ sass --watch input.scss:output.css
 
 ![](2021-02-18-18-21-01.png)
 
-```
 동영상 목차 스크립트 
 SASS 기초
 
@@ -111,7 +110,7 @@ CSS 호환성
 오랜 기간동안 운영/개발 되어진 완성도
 다양한 프레임워크
 SASS의 문법
-
+```
 // scss, Sassy CSS
 ul {
   li {
@@ -128,40 +127,44 @@ ul
 ul li {
   display: block;
 }
- 설치하기
+```
+## 설치하기
 
 NODEJS/NPM설치
 
 https://nodejs.org 에서 nodejs LTS 버전 설치
 
 nodejs 설치 시 npm도 함께 설치됩니다.
-
+```
 // 터미널에서 node 버전 확인으로 설치가 잘 되었는지 확인.
 $ node -v
 v9.3.0
-
+```
+```
 $ npm -v
 5.6.0
-SASS설치
+```
+## SASS설치
 
-npm 을 이용하여 sass를 설치.
-
+### npm 을 이용하여 sass를 설치.
+```
 // npm을 이용하여 sass 설치
 $ (sudo) npm install -g sass
 
 // sass 버전 확인
 $ sass --version
 1.9.0 compiled with dart2js 2.0.0-dev.67.0
- 
+``` 
 
-Command-line tool을 이용하여 SASS 사용하기 
-
+### Command-line tool을 이용하여 SASS 사용하기 
+```
 // 기본 사용법 
 $ sass input.scss:output.css
 
 // --watch 옵션 추가시 수정될 때마다 자동으로 css 컴파일
 $ sass --watch input.scss:output.css
---style [expanded, compressed]
+```
+### --style [expanded, compressed]
 
 컴파일된 CSS파일의 formatting style을 지정.
 
@@ -169,7 +172,7 @@ expanded는 풀어쓴 형태, compressed는 minify된 형태
 
  
 
---source-map
+### --source-map
 
 기본값은 소스맵을 사용함으로 설정 됨.
 
@@ -177,16 +180,14 @@ expanded는 풀어쓴 형태, compressed는 minify된 형태
 
 요소검사툴에서 style 확인시 scss파일명과 행번호를 표시해주어 디버깅을 용이하게 해줍니다.
 
- 
-
- 
+ ``` 
 
 // output.css
 .section{background:#fff}.section .title{color:green}.section .description{text-align:center}
 /*# sourceMappingURL=output.css.map */
  
-
-시작하기
+```
+### 시작하기
 
 @import
 
@@ -290,248 +291,6 @@ nav a {
 	display: block;
 }
 ```
-
-## PROJECT난이도   심화
-웹 UI 개발
-임시 이미지
-[콘텐츠 설계] 조영광
-
-http://www.boostcourse.org/web344/lecture/36667
-좋아요 2663 수강생 9225
-▶▶ 현직자 라이브 강의(1/16)
-강좌 전체목록보기
-공지사항
-수강생 토론 게시판
-리뷰어님께 감사의 마음을 전합니다!
-스터디 게시판(자율)
-오리엔테이션
-강좌 전체목록보기
-1. HTML&CSS 기초
-강좌 전체목록보기
-프로젝트A-1(리뷰체험)
-강좌 전체목록보기
-프로젝트A-2
-강좌 전체목록보기
-2. 웹 접근성의 이해
-강좌 전체목록보기
-3. HTML&CSS 활용
-강좌 전체목록보기
-프로젝트B
-강좌 전체목록보기
-프로젝트C
-강좌 전체목록보기
-참고학습. Git 기초
-강좌 전체목록보기
-참고학습. TaskRunner
-강좌 전체목록보기
-참고학습. Sass 기초
-강좌 전체목록보기
-Sass 기초
-Sass 기초
-참고학습. CSS애니메이션
-강좌 전체목록보기
-코스를 마치며
-강좌 전체목록보기
-Sass 기초
-
-동영상 목차 스크립트 
-SASS 기초
-
-강의 소개
-
-HTML/CSS에 대한 기본적인 지식
-조건문, 반복문 등 기초 프로그래밍 지식
-기능을 숙지하고 사용해보는 것에 중점
- 
-
- 이해하기
-
-CSS Preprocessor란?
-
-- 별도의 컴파일과정을 통해 CSS의 기능을 확장하고, 반복적인 작업을 자동화 하게 도와 주는 툴
-
-SASS ( Syntactically Awesome Stylesheets )
-
-CSS 호환성
-많은 실무 사용 사례
-풍부한 기능
-다양한 커뮤니티와 공유 활동
-오랜 기간동안 운영/개발 되어진 완성도
-다양한 프레임워크
-SASS의 문법
-
-// scss, Sassy CSS
-ul {
-  li {
-    display: block;				    
-  }
-}
-
-// sass
-ul 
-  li 
-    display: block					
-
-// Compiled CSS
-ul li {
-  display: block;
-}
- 설치하기
-
-NODEJS/NPM설치
-
-https://nodejs.org 에서 nodejs LTS 버전 설치
-
-nodejs 설치 시 npm도 함께 설치됩니다.
-
-// 터미널에서 node 버전 확인으로 설치가 잘 되었는지 확인.
-$ node -v
-v9.3.0
-
-$ npm -v
-5.6.0
-SASS설치
-
-npm 을 이용하여 sass를 설치.
-
-// npm을 이용하여 sass 설치
-$ (sudo) npm install -g sass
-
-// sass 버전 확인
-$ sass --version
-1.9.0 compiled with dart2js 2.0.0-dev.67.0
- 
-
-Command-line tool을 이용하여 SASS 사용하기 
-
-// 기본 사용법 
-$ sass input.scss:output.css
-
-// --watch 옵션 추가시 수정될 때마다 자동으로 css 컴파일
-$ sass --watch input.scss:output.css
---style [expanded, compressed]
-
-컴파일된 CSS파일의 formatting style을 지정.
-
-expanded는 풀어쓴 형태, compressed는 minify된 형태
-
- 
-
---source-map
-
-기본값은 소스맵을 사용함으로 설정 됨.
-
-컴파일시 CSS파일 최하단에 소스맵 맵핑파일의 이름이 주석으로 추가되고, CSS파일명과 동일한 이름의 .map 파일이 추가 생성.
-
-요소검사툴에서 style 확인시 scss파일명과 행번호를 표시해주어 디버깅을 용이하게 해줍니다.
-
- 
-
- 
-
-// output.css
-.section{background:#fff}.section .title{color:green}.section .description{text-align:center}
-/*# sourceMappingURL=output.css.map */
- 
-
-시작하기
-
-@import
-
-CSS의 @import 구문과 유사한 형태로 사용되지만, 차이점은 Sass에서의 @import는 컴파일 단계에서 파일을 불러와 하나의 CSS로 파일이 합쳐집니다. scss파일을 모듈 또는 레이아웃 기준으로 분리하여 css 구조화를 할수 있습니다.
-
-
-// _espresso.scss
-@import 'espresso'; // 파일명 첫번째 언더바(_) 생략 가능
-@import 'espresso.scss'; // 확장자는 생략 가능
-
-@import 'scss/espresso'; // 하위 폴더 지정
-@import 'espresso', 'reset', 'common'; // 여러개 파일 import
-Nesting 
-
-자식 선택자를 부모 선택자 블럭 안에 중첩하여 쓸수 있는 확장된 문법.
-
-부모 선택자를 반복해서 쓰지 않아도 되고, 가독성이 더 뛰어나며 구조화된 느낌의 코드를 작성할 수 있습니다.
-
-// scss 
-.section {
-	background: white;
-
-	.title {
-		color: green;
-	}
-	.description {
-		text-align: center;
-	}
-	.description_list {
-		margin: 20px 0;
-		padding: 20px;
-		border: 1px solid gray;
-		dd {
-			font-size: 15px;
-			line-height: 20px;
-		}
-	}
-}
-// CSS 
-.section{background:white}
-.section .title{color:green}
-.section .description{text-align:center}
-.section .description_list{margin:20px 0;padding:20px;border:1px solid gray}
-.section .description_list dd{font-size:15px;line-height:20px}
-그러나, 중첩을 너무 남발하게 되면 들여쓰기 뎁스가 깊어지면서 오히려 가독성이 떨이질 수 있고, 컴파일된 CSS에도 불필요한 셀렉터가 포함될 수 있습니다. 
-
-// Bad CASE
-// scss 
-nav {
-	ul {
-		margin: 0;
-		li { 
-			display: inline-block; 
-			a {
-				display: block;								
-			}
-		}
-	}
-}
-// CSS 
-nav ul {
-	margin: 0;					
-}
-nav ul li {
-	display: inline-block;
-}
-nav ul li a {
-	display: block;					
-}
-가급적 3뎁스 이내의 중첩으로 작성하는 것이 좋습니다.
-
-// Good CASE
-// scss 
-nav {
-	ul {
-		margin: 0;
-	}
-	li { 
-		display: inline-block; 
-	}
-
-	a {
-		display: block;        
-	}
-}
-
-// CSS 
-nav ul {
-	margin: 0;
-}
-nav li {
-	display: inline-block;
-}
-nav a {
-	display: block;
-}
-
 
 ## & ( Referencing Parent Selectors, 부모 참조 셀렉터 )
 블럭 안에 엠퍼센드를 추가하여, 차상위 셀렉터(부모 셀렉터)를 참조하는 형태의 셀렉터
@@ -922,6 +681,7 @@ extend를 위한 가상의 룰셋 생성을 위한 셀렉터. CSS에서는 존�
 .latte_2 {
 	@extend .americano + .espresso;
 }
+
  ```
  미디어 구문안에서 extend 사용시에 블럭 밖의 클래스를 확장할수 없습니다
  ```
