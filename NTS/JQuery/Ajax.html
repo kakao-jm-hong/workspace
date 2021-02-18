@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-1.12.0.js" integrity="sha256-yFU3rK1y8NfUCd/B4tLapZAy9x0pZCqLZLmFL3AWb7s=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $.ajax("api.php",{
+            "data" : {"param":1},
+            "type" : "post",
+            "async" : false // false로하면 동기식이된다. 메인스레드가 기다리게된다. true로 대부분함
+        }).done(function(data,status){//200 대 or 304
+            console.log(data);
+            // json.parse(data);
+        }).fail(function(jQuerXhr){//나머지 상태
+            console.log(jQuerXhr);
+        });
+    </script>
+</body>
+</html>
