@@ -1,0 +1,17 @@
+@import 'sprite';
+
+.icon_account {
+    @include sprite($account);
+
+    display: inline-block;
+}
+.icon_check_circle {
+    @include sprite($check_circle);
+
+    display: inline-block;
+}
+.icon_delete {
+    @include sprite($delete);
+
+    display: inline-block;
+}
