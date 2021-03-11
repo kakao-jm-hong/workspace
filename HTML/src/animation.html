@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes square-to-circle {
+            0% {
+                border-radius: 0 0 0 0;
+                background: coral;
+                transform: rotate(0deg);
+            }
+
+            25% {
+                border-radius: 50% 0 0 0;
+                background: darksalmon;
+                transform: rotate(45deg);
+            }
+
+            50% {
+                border-radius: 50% 50% 0 0;
+                background: indianred;
+                transform: rotate(90deg);
+            }
+
+            75% {
+                border-radius: 50% 50% 50% 0;
+                background: lightcoral;
+                transform: rotate(135deg);
+            }
+
+            100% {
+                border-radius: 50%;
+                background: darksalmon;
+                transform: rotate(180deg);
+            }
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: coral;
+            animation: square-to-circle 2s 1s infinite alternate;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>
