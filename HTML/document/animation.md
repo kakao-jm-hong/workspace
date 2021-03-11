@@ -130,3 +130,31 @@
   animation: square-to-circle 2s 1s infinite cubic-bezier(1,.015,.295,1.225) alternate;  
 }
  ```
+
+ ## 주요속성
+ - animation-name : 애니메이션의 중간 상태를 지정하기 위한 이름을 정의합니다. 중간 상태는 @keyframes 규칙을 이용하여 기술합니다.
+- animation-duration : 한 싸이클의 애니메이션이 얼마에 걸쳐 일어날지 지정합니다.
+- animation-delay :엘리먼트가 로드되고 나서 언제 애니메이션이 시작될지 지정합니다.
+- animation-direction : 애니메이션이 종료되고 다시 처음부터 시작할지 역방향으로 진행할지 지정합니다.
+- animation-iteration-count : 애니메이션이 몇 번 반복될지 지정합니다. infinite 로 지정하여 무한히 반복할 수 있습니다.
+- animation-play-state : 애니메이션을 멈추거나 다시 시작할 수 있습니다.
+animation-timing-function : 중간 상태들의 전환을 어떤 시간간격으로 진행할지 지정합니다.
+animation-fill-mode : 애니메이션이 시작되기 전이나 끝나고 난 후 어떤 값이 적용될지 지정합니다.
+
+
+출처: https://webclub.tistory.com/621 [Web Club]
+
+# 성능이슈
+
+## reflow
+생성된 DOM 노드의 레이아웃(너비, 높이 등) 변경 시 영향받는 모든 노드(자식, 부모)의 수치를 다시 계산하여 렌더 트리를 재생성하는 작업입니다.
+
+## repaint
+reflow 과정이 끝난 후 재생성된 렌더 트리를 다시 그리는 작업으로 수치와 상관없는 background-color, visibility, outline 등의 스타일 변경시에는 reflow 과정이 생략 된 repaint 작업만 수행합니다.
+
+## reflow를 피하거나 최소화 하는 방법
+- 1. 클래스 변화에 따른 스타일 변화를 원할 경우, 최대한 DOM 구조 상 끝단에 위치한 노드에 추가합니다.
+- 2. 애니메이션이 들어간 엘리먼트는 가급적 position: fixed 또는 position: absolute로 지정합니다.
+- 3. JS를 통해 스타일변화를 주어야 할 경우, 가급적 한번에 처리합니다.
+- 4. 인라인 스타일을 최대한 배제합니다.
+- 5. 테이블 레이아웃을 피하는 것이 좋습니다.
