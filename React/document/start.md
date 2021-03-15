@@ -89,3 +89,29 @@ yarn start
 ```
 yarn
 ```
+
+## babel-lader 호환성
+```
+SKIP_PREFLIGHT_CHECK = true
+```
+
+
+## vs code 설치
+- reactjs code snippets
+- Prettier - Code formatter
+
+## Prettier 포맷 사용
+- React루트 상단에 ./.prettierrc 파일 생성
+```
+{
+    "useTabs":false,
+    "printWidth": 100,
+    "tabWidth": 2,
+    "trailingComma": "all",
+    "semi": true,
+    "singleQuote": true
+}
+```
+
+## command + shift + p  
+- format document 활성화
