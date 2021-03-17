@@ -34,6 +34,6 @@ DOM의 업데이트는 상위 component의 render()가 실행될 때 혹은 setS
 
 - [01](./document/start.md)
 
-# React 공식문서
+# React 공식문서 시작
 
 - [01](./document/basig.md)
