@@ -1,13 +1,19 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-
+import ChildComponent from './03/ChildComponent'
 class App extends Component {
   render() {
+    const obj = {name:'id'}
     return (
-      <div className="APP">
-        <h1 className="title">두잇! 리액트 시작하기</h1>
-      </div>
+      <ChildComponent
+      boolValue={true}
+      numValue={1}
+      arrayValue={[1,2,3]}
+      objValue={obj}
+      nodeValue={<h1>shem</h1>}
+      funValue={()=>{console.log('메시지')}}>
+
+      </ChildComponent>
     );
   }
 }
