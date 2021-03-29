@@ -4,6 +4,7 @@ import ChildComponent from './03/ChildComponent'
 class App extends Component {
   render() {
     const obj = {name:'id'}
+    //주석
     return (
       <ChildComponent
       boolValue={true}

@@ -16,10 +16,12 @@ class ChildComponent2 extends Component {
 }
 ChildComponent2.propTypes={
     //객체 프로퍼티
+    //test
     objValue:PropTypes.shape({
         name:PropTypes.string,
         age:PropTypes.number,
     }),
+    // 필수 프로퍼티 (꼭넣어야하는 프로퍼티)
     requiredStringValue:PropTypes.string.isRequired,
 }
 
