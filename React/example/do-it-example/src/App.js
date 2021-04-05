@@ -1,20 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
-import ChildComponent from './03/ChildComponent'
+import NewMySetUp from './0test/NewMySetUp'
 class App extends Component {
   render() {
     const obj = {name:'id'}
     //주석
     return (
-      <ChildComponent
-      boolValue={true}
-      numValue={1}
-      arrayValue={[1,2,3]}
-      objValue={obj}
-      nodeValue={<h1>shem</h1>}
-      funValue={()=>{console.log('메시지')}}>
-
-      </ChildComponent>
+      <NewMySetUp></NewMySetUp>
     );
   }
 }

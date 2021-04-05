@@ -37,3 +37,6 @@ DOM의 업데이트는 상위 component의 render()가 실행될 때 혹은 setS
 # React 공식문서 시작
 
 - [01](./document/basig.md)
+
+# 리액트 기본꼴
+- [study](./document/study.md)
