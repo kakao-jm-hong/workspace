@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
-import NewMySetUp from './0test/NewMySetUp'
+// import RCC from './01/RCC'
+import Test from './hook/Test';
 class App extends Component {
   render() {
-    const obj = {name:'id'}
+    // const obj = {name:'id'}
     //주석
     return (
-      <NewMySetUp></NewMySetUp>
+      <Test></Test>
     );
   }
 }
