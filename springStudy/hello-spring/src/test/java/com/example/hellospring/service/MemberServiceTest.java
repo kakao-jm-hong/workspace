@@ -6,6 +6,8 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.sql.SQLException;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 
@@ -26,10 +28,10 @@ class MemberServiceTest {
     }
 
     @Test
-    void 회원가입() {
+    void 회원가입() throws SQLException {
         //given
         Member member = new Member();
-        member.setName("hello");
+        member.setName("spring");
 
         //when
         Long saveId = memberService.join(member);
@@ -40,7 +42,7 @@ class MemberServiceTest {
     }
 
     @Test
-    void 중복_회원_예외() {
+    void 중복_회원_예외() throws SQLException {
         //given
         Member member1 = new Member();
         member1.setName("spring");
