@@ -18,7 +18,8 @@ public class ItemRepository {
         if (item.getId() == null) {
             em.persist(item); // 신규 등록
         } else {
-            em.merge(item); // update 랑 비슷한 것
+            // 실무에서는 잘안사용한데...
+            em.merge(item); // update 랑 비슷한 것 DB에서 꺼내오고 다시 셋해서 영속성 반영한다. 그래서 바꿔치기 된애를 반환한다. Item merge = em.merge(item); // merge자체가 관리되는 애다.
         }
     }
 
