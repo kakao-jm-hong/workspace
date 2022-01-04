@@ -1,12 +1,12 @@
-package com.jpabook.jpashop.controller;
+package jpabook.jpashop.controller;
 
-import com.jpabook.jpashop.domain.Member;
-import com.jpabook.jpashop.domain.Order;
-import com.jpabook.jpashop.domain.item.Item;
-import com.jpabook.jpashop.repository.OrderSearch;
-import com.jpabook.jpashop.service.ItemService;
-import com.jpabook.jpashop.service.MemberService;
-import com.jpabook.jpashop.service.OrderService;
+import jpabook.jpashop.domain.Member;
+import jpabook.jpashop.domain.Order;
+import jpabook.jpashop.domain.item.Item;
+import jpabook.jpashop.repository.OrderSearch;
+import jpabook.jpashop.service.ItemService;
+import jpabook.jpashop.service.MemberService;
+import jpabook.jpashop.service.OrderService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -32,7 +32,6 @@ public class OrderController {
         model.addAttribute("items", items);
 
         return "order/orderForm";
-
     }
 
     @PostMapping("/order")
@@ -40,8 +39,6 @@ public class OrderController {
                         @RequestParam("itemId") Long itemId,
                         @RequestParam("count") int count) {
 
-        // TODO 바깥에는 식별자만 넘겨주고 핵심 비지니스로직을 안에 넣어서 영속성에서 조회한다!
-        // transactional 있는 상태에서 돌려야함!
         orderService.order(memberId, itemId, count);
         return "redirect:/orders";
     }

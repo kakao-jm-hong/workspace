@@ -4,16 +4,15 @@ spring:
     username: sa
     password:
     driver-class-name: org.h2.Driver
+
   jpa:
     hibernate:
-      ddl-auto: none
+      ddl-auto: create
     properties:
       hibernate:
 #        show_sql: true
         format_sql: true
 
-logging:
-  level:
-    org.hibernate.SQL: debug
-    # 로그찍어주는 파라미터
-    org.hibernate.type: trace
+logging.level:
+  org.hibernate.SQL: debug
+#  org.hibernate.type: trace
