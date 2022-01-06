@@ -27,6 +27,7 @@ public class Member {
     private Address address;
 
 //    @JsonIgnore // 조회할 때 이것을 사용해서 안나오게 할 수 있음.
+    @JsonIgnore
     @OneToMany(mappedBy = "member")
     private List<Order> orders = new ArrayList<>();
 }

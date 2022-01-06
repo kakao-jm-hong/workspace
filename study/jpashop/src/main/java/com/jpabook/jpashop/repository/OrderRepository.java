@@ -101,4 +101,32 @@ public class OrderRepository {
         TypedQuery<Order> query = em.createQuery(cq).setMaxResults(1000);
         return query.getResultList();
     }
+
+
+    // fetch join LAZY 무시하고 다가져온다!!
+    // 재사용성 좋음 밑에에보다
+    public List<Order> findAllWithMemberDelivery() {
+        return em.createQuery(
+                "select o from Order o" +
+                        " join fetch o.member m" +
+                        " join fetch  o.delivery", Order.class
+        ).getResultList();
+    }
+
+    /**
+     * 최적화됨, 하지만 재사용성 없음..위에 애보다
+     * 요 dto를 쓸때만 쓸 수 잇음.
+     * new 명령어를 사용해서 jpql의 결과를 DTO로 즉시변환
+     * ADMIN API면 사용해도 괜찮을 듯?
+     * @return
+     */
+    // api 스펙이 바뀌면 화면을 뜯어고쳐야함... 근데 성능은 야아아아악간 좋음
+//    다른패키지로 분리함.
+//    public List<OrderSimpleQueryDto> findOrderDtos() {
+//        return em.createQuery("select new com.jpabook.jpashop.repository.OrderSimpleQueryDto(o.id, m.name, o.orderDate, o.status, d.address) from Order o" +
+//                " join o.member m" +
+//                " join o.delivery d", OrderSimpleQueryDto.class).getResultList();
+//    }
+
+
 }
