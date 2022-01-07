@@ -113,6 +113,20 @@ public class OrderRepository {
         ).getResultList();
     }
 
+    public List<Order> findAllWithItem() {
+        // entitiy 중복이면 distinct가 중복을 날려준다.
+        return em.createQuery(
+                "select o from Order o"+
+                " join fetch o.member m" +
+                " join fetch o.delivery d" +
+                " join fetch o.orderItems oi" +
+                " join fetch oi.item i", Order.class)
+//                fetch join하면 setMaxResults 안되요~ warn내면서 메모리에서 페이징처리함.. 조심..
+//                .setMaxResults(1)
+//                .setMaxResults(100)
+                .getResultList();
+    }
+
     /**
      * 최적화됨, 하지만 재사용성 없음..위에 애보다
      * 요 dto를 쓸때만 쓸 수 잇음.
