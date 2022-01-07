@@ -11,6 +11,7 @@ spring:
       hibernate:
 #        show_sql: true
         format_sql: true
+        default_batch_fetch_size: 100 # 이거좋음 in { ? , ?, ? , ? } 같은 쿼리를 날리게 해줘서 LAZY에 의해 하나하나 되던걸 최적화 해줌
 
 logging:
   level:
