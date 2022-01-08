@@ -25,10 +25,10 @@ import java.util.stream.Collectors;
 public class OrderApiController {
     /**
      * 1. 엔티티 조회 방식으로 우선 접근
-     *  1. 페치조인으로 쿼리 수를 최적화
-     *  2. 컬렉션 최적화
-     *      1. 페이징 필요 batchSize
-     *      2. 페이징 필요 X -> 페치조인 사용
+     * 1. 페치조인으로 쿼리 수를 최적화
+     * 2. 컬렉션 최적화
+     * 1. 페이징 필요 batchSize
+     * 2. 페이징 필요 X -> 페치조인 사용
      * 2. 엔티티 조회 방식으로 해결이 안되면 DTO 조회 방식
      * 3. DTO 조회 방식으로 안되면 NativeSql or Spring jdbcTemplate'
      * v4~v6 부터는 sql시에 필요한 데이터만 가져오지만 직접 코드로쳐야해서 귀찬타 네트워크상 움직이는 메모리최적화할때 좋음
@@ -64,6 +64,12 @@ public class OrderApiController {
     }
 
     // 페치조인으로 성능올림 하지만 페이징안됌..
+    // OSIV service/query/* 에 다가져가서 그안에서 transaction을 처리한다.
+//    @GetMapping("/api/v3/orders")
+//    public List<OrderDto> orderV3() {
+//      return orderQueryService();
+//    }
+
     @GetMapping("/api/v3/orders")
     public List<OrderDto> orderV3() {
         // to many 데이터 뻥튀기됨 페치조인쓰면 그래서 디스틴트

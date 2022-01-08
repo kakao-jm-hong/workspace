@@ -8,7 +8,7 @@ import javax.persistence.PersistenceContext;
 import java.util.List;
 
 @Repository
-public class MemberRepository {
+public class MemberRepositoryOld {
 
     // Entity 매니저가 스프링이 주입해준다.
     @PersistenceContext // @Autowired 대체가능 -> final해서 @RequiredArgsConstructor 가능
