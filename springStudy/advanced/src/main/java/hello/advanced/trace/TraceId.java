@@ -32,6 +32,10 @@ public class TraceId {
         return new TraceId(id, level - 1);
     }
 
+    public boolean isFirstLevel() {
+        return this.level == 0;
+    }
+
     public String getId() {
         return id;
     }
@@ -39,4 +43,6 @@ public class TraceId {
     public int getLevel() {
         return level;
     }
+
+
 }
