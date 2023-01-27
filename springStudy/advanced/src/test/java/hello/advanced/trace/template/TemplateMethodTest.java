@@ -55,4 +55,38 @@ public class TemplateMethodTest {
             }
         };
     }
+
+    // my test
+
+    @Test
+    void myTemplateMethodPattern() {
+        proccess1();
+        proccess2();
+    }
+
+    private void proccess1() {
+        // 고정로직 //
+        long start = System.currentTimeMillis();
+
+        // 비지니스 로직 //
+        System.out.println("TemplateMethodTest.proccess1");
+
+        // 고정로직 //
+        long end = System.currentTimeMillis();
+        long result = end - start;
+        System.out.println("result = " + result);
+    }
+
+    private void proccess2() {
+        // 고정로직 //
+        long start = System.currentTimeMillis();
+
+        // 비지니스 로직 //
+        System.out.println("TemplateMethodTest.proccess2");
+
+        // 고정로직 //
+        long end = System.currentTimeMillis();
+        long result = end - start;
+        System.out.println("result = " + result);
+    }
 }
